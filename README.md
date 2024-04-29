@@ -1,4 +1,4 @@
-# Wireless World E-commerce Website
+# Wireless World 
 
 Welcome to the Wireless World E-commerce website repository! This repository contains the source code for an online mobile selling platform built using HTML, CSS, JavaScript, and JSON.
 
