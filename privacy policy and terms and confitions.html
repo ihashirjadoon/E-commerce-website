@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Tenor+Sans&family=Work+Sans&display=swap" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+  <link rel="icon" type="image/x-icon" href="Assets/images/icon.png">
+  <title>Privacy Policy & T&Cs</title>
+  <link rel="stylesheet" href="Assets/css/bootstrap.min.css">
+  <link rel="stylesheet" href="Assets/css/style.css">
+</head>
+
+<body>
+
+  <!-- navbar start -->
+
+  <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-blue">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="index.html"><img src="Assets/images/logo.png" alt="logo" height="55px"></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+          </li>
+
+          <li class="nav-item dropdown">
+            <a class="nav-link active dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+              aria-expanded="false">
+              Products
+            </a>
+            <ul class="dropdown-menu bg-drop">
+              <li><a class="dropdown-item" href="smartphones.html">Smart Phones</a></li>
+              <li><a class="dropdown-item" href="tablet.html">Tablets</a></li>
+              <li><a class="dropdown-item" href="featurephone.html">Feature Phones</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="gallery.html">Gallery</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="index.html#about-us">About Us</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="index.html#contact-us">Contact Us</a>
+          </li>
+        </ul>
+        <form class="d-flex ms-auto" role="search">
+          <input class="form-control me-2" type="search" placeholder="Search Here..." aria-label="Search"
+            id="search-box">
+          <button class="btn btn-outline-light" type="submit">Search</button>
+        </form>
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+          <li class="nav-but">
+            <a class="btn btn-outline-light" data-bs-toggle="modal" data-bs-target="#staticBackdrop">Log
+              in</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Login Modal -->
+
+  <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+    aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header bg-blue">
+          <h1 class="modal-title fs-2 " id="staticBackdropLabel">Login</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body fs-6">
+
+          <form action="">
+            <div class="form-floating mb-3">
+              <input type="email" class="form-control form-control-sm" placeholder="Email" required
+                id="floatinginput" />
+              <label for="floatinginput">Email</label>
+            </div>
+            <div class="form-floating mb-3">
+              <input type="password" class="form-control form-control-sm" placeholder="Password" required
+                id="floatingpassword" />
+              <label for="floatingpassword">Password</label>
+            </div>
+            <div class="mt-3">
+              <input type="checkbox" /><span class="checkbox-span">Remember me</span>
+              <div class="forget-password">
+                <a href="#" class="primary-hover">Forgot Password?</a>
+              </div>
+            </div>
+
+            <div class="mt-3">
+              <button class="btn btn-primary" onclick="loginmsg()">
+                Login
+              </button>
+            </div>
+          </form>
+
+          <div class="mt-3">
+            <span>Don't have an account?</span>
+            <button class="p-0 border-0 bg-transparent colprimary primary-hover" data-bs-toggle="modal"
+              data-bs-target="#staticBackdrop2">
+              Register
+            </button>
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <!-- Login Modal End -->
+
+  <!-- Registration Modal -->
+
+  <div class="modal fade" id="staticBackdrop2" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+    aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+      <div class="modal-content">
+        <div class="modal-header bg-blue">
+          <h1 class="modal-title fs-2" id="staticBackdropLabel">Create An Account</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body fs-6">
+
+          <form action="">
+            <div class="form-floating mb-3">
+              <input type="text" class="form-control form-control-sm" placeholder="First Name" required
+                id="floatinginput" />
+              <label for="floatinginput">First Name</label>
+            </div>
+            <div class="form-floating mb-3">
+              <input type="text" class="form-control form-control-sm" placeholder="Last Name" required
+                id="floatinginput" />
+              <label for="floatinginput">Last Name</label>
+            </div>
+            <div class="form-floating mb-3">
+              <input type="email" class="form-control form-control-sm" placeholder="Email" required
+                id="floatinginput" />
+              <label for="floatinginput">Email</label>
+            </div>
+            <div class="row">
+              <div class="col form-floating mb-3">
+                <input type="text" class="form-control form-control-sm" placeholder="Phone Number" required
+                  id="floatingnumber" pattern="[0-9]{11}" title="Please enter valid phone number" />
+                <label for="floatingnumber" class="p-3">Phone Number</label>
+              </div>
+              <div class="col form-floating mb-3">
+                <input type="date" class="form-control form-control-sm" placeholder="Date of birth" required
+                  id="floatingdob" />
+                <label for="floatingdob" class="p-3">Date Of Birth</label>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col form-floating mb-3">
+                <input type="text" class="form-control form-control-sm" placeholder="City" required id="floatingcity" />
+                <label for="floatingcity" class="p-3">City</label>
+              </div>
+              <div class="col form-floating mb-3">
+                <input type="text" class="form-control form-control-sm" placeholder="Country" required
+                  id="floatingcountry" />
+                <label for="floatingcountry" class="p-3">Country</label>
+              </div>
+            </div>
+            <div class="form-floating mb-3">
+              <input type="password" class="form-control form-control-sm" placeholder="Password" required
+                id="floatingpassword" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
+                title="Must contain at least one  number and one uppercase and lowercase letter, and at least 8 or more characters" />
+              <label for="floatingpassword">Password</label>
+            </div>
+            <div class="mt-3">
+              <input type="checkbox" required /><span class="checkbox-span">I agree to terms and
+                conditions.</span>
+            </div>
+            <div class="mt-3">
+              <button class="btn btn-primary" onclick="signupmsg()">
+                Sign Up
+              </button>
+            </div>
+          </form>
+          <div class="mt-3">
+            <span>Already have an account?</span>
+            <button class="p-0 border-0 bg-transparent colprimary primary-hover" data-bs-toggle="modal"
+              data-bs-target="#staticBackdrop">
+              Login
+            </button>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <!-- Registration Modal End -->
+
+  <!-- navbar end -->
+
+  <!-- privacy policy -->
+  <div class="container container-privacy-policy">
+    <h2>Privacy Policy</h2>
+    <ul>
+      <li>This privacy policy applies to the use of the Wireless World website and all applications, services, products,
+        and tools.</li>
+      <li>Wireless World is responsible for collecting and processing personal data, which may include account ID, name,
+        gender, age, email address, phone number, postal address, and other required details. Non-personal information,
+        such as usage and device information, may also be collected.</li>
+      <li>Personal information may be stored on Wireless World servers and is collected for the purpose of providing
+        products or services, informing users about products and services, providing customer support, and improving the
+        platform.</li>
+      <li>Wireless World may send survey and marketing communications.</li>
+      <li>Information security practices are in place to protect user data.</li>
+      <li>To inform you about various products and services offered on our platform and provide customer support to You.
+      </li>
+      <li>To address your queries and resolve your concerns pertaining to any product or service that You were looking
+        for.</li>
+      <li>To send you survey and marketing communications or facilitate various programs and initiatives launched either
+        by us or third parties which we believe may be of interest to you.</li>
+      <li>To facilitate your usage of the platform (what features you like, how you use them, etc.) and improve our
+        products or services, or any other content on the platform (such as by personalizing content to your interests),
+        process and complete your transactions, and make special offers.</li>
+
+      <li>The privacy policy is effective from 1st June 2023.</li>
+    </ul>
+  </div>
+
+  <div class="container container-privacy-policy">
+    <h2>Terms and Conditions</h2>
+    <ul>
+      <li>Welcome to Wireless World. By accessing and using our website and services, you agree to be bound by the
+        following terms and conditions:</li>
+      <li>We offer a range of mobile devices, accessories, and related services through our website. All products and
+        services are subject to availability.</li>
+      <li>We strive to provide accurate pricing information for all products and services on our website. However, we
+        reserve the right to modify prices at any time without prior notice.</li>
+      <li>We accept online payments through various payment methods, including PayPal, Mastercard, Visa, and American
+        Express. Payment must be made in full at the time of purchase.</li>
+      <li>We provide free home delivery within the United States. Delivery times may vary based on the availability of
+        products and location of the customer.</li>
+      <li>We offer a 30-day return policy for all products purchased through our website. Products must be returned in
+        their original condition and packaging. Refunds will be processed within 7-10 business days.</li>
+    </ul>
+
+  </div>
+
+  <!-- footer starts here -->
+  <footer class="footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-6 col-sm-6 col-lg-3 footer-links">
+          <img src="Assets/images/logo.png" alt="logo" class="mb-1">
+          <p>Innovative electronic products. Top brands at competitive prices. 40+ leading brands. Customer
+            comfort.
+            Committed team. Market experience. Technology services. Diverse brand selection. Customer
+            satisfaction.
+            Value-added services.</p>
+        </div>
+        <div class="col-6 col-sm-6 col-lg-3 footer-links">
+          <h4>Sitemap</h4>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="smartphones.html">Smart Phones</a></li>
+            <li><a href="tablet.html">Tablests</a></li>
+            <li><a href="featurephone.html">Feature Phones</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="index.html#contact-us">Contact Us</a></li>
+            <li><a href="index.html#about-us">About Us</a></li>
+
+          </ul>
+        </div>
+        <div class="col-6 col-sm-6 col-lg-3 footer-links">
+          <h4>Get Help</h4>
+          <ul>
+            <li><a href="faqs.html">FAQ</a></li>
+            <li><a href="privacy policy and terms and confitions.html">Privacy Policy</a></li>
+            <li><a href="privacy policy and terms and confitions.html">Terms and Conditions</a></li>
+            <li><a href="#" data-bs-toggle="modal" data-bs-target="#payment-options">Payment Options</a>
+            </li>
+          </ul>
+
+          <!-- Payment Options Modal -->
+          <div class="modal fade" id="payment-options" tabindex="-1" role="dialog" aria-labelledby="paymentModalLabel"
+            aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable" role="document">
+              <div class="modal-content">
+                <div class="modal-header" style="background-color: #0062cc; color: white;">
+                  <h5 class="modal-title" id="paymentModalLabel">Payment Methods</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close" style="display: none;">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                  <div class="container-payment-options">
+                    <div class="row">
+                      <div class="col-sm-4">
+                        <img src="Assets/images/payment/mastercard.jpg" class="img-fluid rounded mx-auto d-block"
+                          alt="Payment Method 1">
+                      </div>
+                      <div class="col-sm-4">
+                        <img src="Assets/images/payment/paypal.jpg" class="img-fluid rounded mx-auto d-block"
+                          alt="Payment Method 2">
+                      </div>
+                      <div class="col-sm-4">
+                        <img src="Assets/images/payment/easypaisa.jpg" class="img-fluid rounded mx-auto d-block"
+                          alt="Payment Method 3">
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Close</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- End -->
+
+        </div>
+        <div class="col-6 col-sm-6 col-lg-3 footer-links">
+          <h4>Contact Us</h4>
+          <ul>
+            <li><a href="https://wa.me/923131496948" target="_blank"><i class="fa-brands fa-whatsapp"></i>
+                +92-3012728995</a></li>
+            <li><a href="tel:+923131496948"><i class="fa-solid fa-phone"></i> +92-3131496948</a></li>
+            <li><a href="index.html"><i class="fa-solid fa-earth"></i> www.wirlessworld.com</a></li>
+            <li>
+              <a href="https://mail.google.com/mail/u/0/#inbox?compose=GTvVlcSDZBXJGjDFvmkmfVHZGPMVdZrrWqHJgSbJsZFDczTTRvJKWPCWCkCbBHZfMMTQwqnqGSQKk"
+                target="_blank"><i class="fa-solid fa-envelope"></i> wirelessworld@gmail.com</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="row">
+          <div class="col-12 social-links icon-center mt-3">
+            <a href="https://www.facebook.com/" target="_blank"> <i class="fa-brands fa-facebook"></i> </a>
+            <a href="https://www.instagram.com/" target="_blank"> <i class="fa-brands fa-instagram"></i>
+            </a>
+            <a href="https://twitter.com/" target="_blank"> <i class="fa-brands fa-twitter"></i> </a>
+            <p class="mt-2 text-white">&copy; Copyright 2023 by Wireless World</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="Assets/js/bootstrap.bundle.min.js"></script>
+  <script src="Assets/js/jquery-3.6.4.min.js"></script>
+  <script src="Assets/js/script.js"></script>
+
+
+</body>
+
+</html>
